@@ -136,7 +136,7 @@ class Feature_Extractor_End_to_End(Feature_Extractor):
             """
             signal, _ = librosa.load(wav_file, sr=16000)
             librosa.core.time_to_frames
-            stft = librosa.feature.melspectrogram(signal, n_fft=512, win_length=128, hop_length=32, center=False)
+            stft = librosa.feature.melspectrogram(y=signal, sr=16000, n_fft=512, win_length=128, hop_length=32, center=False)
             return stft
 
 class Feature_Extractor_Hand_Crafted(Feature_Extractor):

@@ -14,6 +14,7 @@ from model_instances.train import main
 from model_instances.inference import SER_Inference_Model
 from model_instances.online import SER_Online_Model
 
+#created a main window UI class
 class Ui_MainWindow(object):
     accuracy_vals = []
     recording_vals = np.zeros([960 * 10 * 10, ])
